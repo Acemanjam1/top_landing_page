@@ -1,1 +1,1 @@
-# top_landing_page
+This is a project created as part of the Odin Project course. The basic outline is that given a screenshot of a landing page and a basic reference for the styles, I need to try to recreate the page using knowledge gained previously in the course material.
