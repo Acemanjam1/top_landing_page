@@ -1,0 +1,35 @@
+* {
+    outline: 1px solid black;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container,
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.container {
+    padding: 4rem;
+    gap: 1rem;
+}
+
+.navbar {
+    padding: 1rem 4rem;
+}
+
+.col {
+    width: 100%;
+}
+
+.container.hero .card-heading {
+    font-size: 48px;
+}
+
+.card .card-heading,
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
