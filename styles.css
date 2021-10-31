@@ -10,6 +10,11 @@ img {
     min-width: 0;
 }
 
+h4 {
+    font-size: 36px;
+    color: #1f2937;
+}
+
 .card-button {
     width: 8rem;
     border-radius: 3px;
@@ -37,9 +42,14 @@ img {
     align-items: center;
 }
 
-.container > * {
-    display: flex;
+.col {
+    /* display: flex; */
     flex: 1 1 240px;
+}
+
+.container.top-bot {
+    flex-direction: column;
+    flex: 1 1 0;
 }
 
 .navbar,
@@ -98,4 +108,19 @@ img {
 
 .navbar-link {
     text-decoration: none;
+}
+
+.image-showcase {
+    margin: 1rem;
+    min-width: 100px;
+    max-width: 80%;
+}
+
+.image-showcase > img {
+    border: solid 3px #3882f6;
+    border-radius: 10%;
+}
+
+.image-showcase > figcaption {
+    text-align: center;
 }
