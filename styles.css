@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 img {
@@ -17,16 +19,17 @@ h4 {
 
 .card-button {
     width: 8rem;
-    border-radius: 3px;
+    height: 2.5rem;
+    border-radius: 5px;
     background-color: #3882f6;
-    border: none;
-    padding: 0.5rem;
+    border: 3px solid #3882f6;
+    font-weight: 600;
 }
 
 .container {
     padding: 3rem 10%;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .navbar,
@@ -45,7 +48,6 @@ h4 {
 }
 
 .col {
-    /* display: flex; */
     flex: 1 1 240px;
 }
 
@@ -66,6 +68,7 @@ h4 {
 
 .navbar-logo {
     font-size: 24px;
+    font-weight: 700;
 }
 
 .navbar-logo,
@@ -82,17 +85,24 @@ img {
     font-size: 18px;
 }
 
-.card-heading .card {
-    border-radius: 3px;
-}
-
 .card {
+    border-radius: 5px;
+    display: flex;
     flex-direction: column;
 }
 
-.card > .card-heading,
-.card > .card-body {
-    padding: 1rem 0;
+.card.call-to-action {
+    flex-direction: row;
+    background-color: #3882f6;
+    width: 80%;
+}
+
+.card.call-to-action > .card-button {
+    border-color: #e5e7eb;
+}
+
+.card > * {
+    margin: 1rem 0;
 }
 
 .hero,
@@ -110,7 +120,6 @@ img {
 }
 
 .image-showcase {
-    margin: 1rem;
     min-width: 100px;
     max-width: 80%;
 }
@@ -118,6 +127,7 @@ img {
 .image-showcase > img {
     border: solid 3px #3882f6;
     border-radius: 10%;
+    box-sizing: border-box;
 }
 
 .image-showcase > figcaption {
@@ -130,11 +140,14 @@ img {
 }
 
 .quote-text {
-    font: italic 100 36px sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
     max-width: 65ch;
 }
 
 .quote-author {
-    font: bold 24px sans-serif;
+    font-size: 24px;
+    font-weight: 700;
     text-align: right;
 }
