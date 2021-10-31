@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
     margin: 0;
     font-family: sans-serif;
 }
@@ -33,6 +33,8 @@ h4 {
 .navbar-links {
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
 }
 
 .container,
@@ -54,7 +56,7 @@ h4 {
 
 .navbar,
 .footer {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 10%;
 }
 
@@ -101,12 +103,9 @@ img {
 
 .navbar-link,
 .navbar-logo {
-    height: 100%;
-    line-height: 5rem;
-    padding: 0 1rem;
-}
-
-.navbar-link {
+    display: flex;
+    text-align: center;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -123,4 +122,19 @@ img {
 
 .image-showcase > figcaption {
     text-align: center;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.quote-text {
+    font: italic 100 36px sans-serif;
+    max-width: 65ch;
+}
+
+.quote-author {
+    font: bold 24px sans-serif;
+    text-align: right;
 }
